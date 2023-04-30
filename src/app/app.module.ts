@@ -3,7 +3,6 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { CheckboxControlValueAcessorDirective } from './diretivas/checkbox-control-value-acessor.directive';
 import { EscolhaQuantidadeComponent } from './componentes/escolha-quantidade/escolha-quantidade.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { EntradaTextoComponent } from './componentes/entrada-texto/entrada-texto.component';
@@ -11,7 +10,6 @@ import { EntradaTextoComponent } from './componentes/entrada-texto/entrada-texto
 @NgModule({
   declarations: [
     AppComponent,
-    CheckboxControlValueAcessorDirective,
     EscolhaQuantidadeComponent,
     EntradaTextoComponent
   ],
