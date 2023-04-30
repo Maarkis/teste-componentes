@@ -1,0 +1,8 @@
+<div class="choose-quantity">
+    <button [disabled]="desabilitado" class="bg-slate-600 rounded-full p-2 h-full disabled:bg-slate-200"
+        (click)="aoRemover()">Decrementar</button>
+    <span class="m-10 text-lg font-bold">{{quantidade}}</span>
+    <button [disabled]="desabilitado" class="bg-slate-600 rounded-full p-2 h-full disabled:bg-slate-200"
+        (click)="aoAdicionar()">Incrementar</button>
+    <p *ngIf="temErro" class="text-red-900 font-bold">Tem erro!</p>
+</div>

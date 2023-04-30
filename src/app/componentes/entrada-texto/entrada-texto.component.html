@@ -1,0 +1,11 @@
+<!-- 
+    Usado o [attr.maxLength] ao inves de [maxLength] pelo o que analisei o [maxLength] fica
+    obrigatório o máximo, e caso, queria um imput sem um máximo use o [attr.maxLength]. -->
+<label>{{rotulo}}</label>
+<!-- <input [disabled]="desabilitado" class="block" type="text" [maxLength]="maximoCaracteres" [minLength]="minimoCaracteres" [placeholder]="dicas"
+    [attr.maxLength]="maximoCaracteres" [(ngModel)]="texto" /> -->
+<input
+    class="border-spacing-0 border-b-gray-600  py-2 px-0 w-full outline-none text-xl bg-transparent block disabled:bg-fuchsia-950"
+    type="text" [disabled]="desabilitado" [minLength]="minimoCaracteres" [placeholder]="dicas"
+    [attr.maxLength]="maximoCaracteres" [ngModel]="texto" (ngModelChange)="texto = $event" />
+<p *ngIf="temErro" class="text-red-900 font-bold">Tem erro!</p>
